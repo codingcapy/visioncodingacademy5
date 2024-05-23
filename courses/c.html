@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author: Paul Kim
+    Date: May 8, 2024
+    Version: 1.0.0
+    Vision Coding Academy Website Ver 4 Entry Level G4 - G10 Page
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C | Vision Coding</title>
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="24x24" href="favicon-24x24.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <script src="../script/tailwindcss.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hover-effect.css">
+    <script src="../script/jquery-3.7.0.min.js"></script>
+    <script src="../script/scrollreveal-3.3.1.min.js"></script>
+    <script src="../script/menu.js" defer="defer"></script>
+    <script src="../script/vertical_effect.js" defer="defer"></script>
+</head>
+
+<body>
+    <div class="flex flex-col min-h-screen bg-black text-white">
+        <header class="md:flex justify-between bg-black text-white sticky z-50 top-0">
+            <div class="flex justify-between md:block px-2">
+                <div class="flex">
+                    <a href="../index.html"><img src="../images/yellow1.png" class="w-[60px]" /></a>
+                    <a href="../index.html">
+                        <div class="nav-element hidden md:block py-5 text-2xl">Vision Coding Academy</div>
+                    </a>
+                    <a href="../index.html">
+                        <div class="md:hidden py-5 text-2xl">Vision Coding</div>
+                    </a>
+                </div>
+                <button id="hamburger-menu" class="text-3xl md:hidden" id="hamburger-menu">&#x2630;</button>
+            </div>
+            <nav id="main-nav">
+                <ul class="md:flex">
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:hidden">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../about/index.html">About</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../summercamp/index.html">Summer Camp<span class="text-green-500 px-2 pb-5 text-sm font-bold">NEW!</span></a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="./index.html">Courses</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../schedule/index.html">Schedule</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../gallery/index.html">Gallery</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../contact/index.html">Contact</a>
+                    </li>
+                    <!-- <li
+                        class="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../login/index.html">Login</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../signup/index.html">Signup</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <div class="flex">
+                <!-- <a href="../login/index.html"
+                    class="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                    Login
+                </a>
+                <a href="../signup/index.html"
+                    class="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                    Signup
+                </a> -->
+            </div>
+        </header>
+        <main class="timeline-content js--fadeInBottom flex-1 md:pl-20 md:max-w-[1400px]">
+            <div class="bg-black text-white md:flex md:pt-20">
+                <section class="flex-1 mx-auto md:mx-20 py-10 md:px-10 px-2">
+                    <h3 class="text-5xl md:text-6xl py-10 pb-2">C Programming Language</h3>
+                    <h3 class="text-5xl md:text-6xl pb-5"></h3>
+                    <p class="font-bold underline">Overview:</p>
+                    <p class="text-lg">Learn one of the most important and oldest programming languages. As a low-level,
+                        or "close-to-the-metal" language, C is in many ways the core and beating heart of programming.
+                        Several programming languages are built in, or ontop of C, and you will learn what happens
+                        "under the hood" of those languages.</p>
+                </section>
+                <section class="flex-1 py-10">
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Introduction to Programming /
+                            Input & Output / Variables and Data Types
+                        </h3>
+                        <img src="../images/icon71c.png" alt="scratch logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Introduction to programming</li>
+                            <li class="text-lg">variables, data types (integers, floats, booleans), basic operators (+,
+                                -, *, /, %)</li>
+                            <li class="text-lg">Reading data from the user and print</li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Write programs to perform basic calculations with different data types
+                            </li>
+                            <li class="text-lg">Identify data types based on given values.</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Conditional Statements (if/else)
+                        </h3>
+                        <img src="../images/icon71c.png" alt="scratch logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">if statements, else statements, logical operators (and, or, not)</li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Write programs that make decisions based on user input (e.g., checking
+                                if a number is even or odd).
+                            </li>
+                            <li class="text-lg">Use nested if statements for complex decision-making.</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Loops (for, while)</h3>
+                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">for loops (definite iteration), while loops (indefinite iteration)</li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Write programs that use for loops for repetitive tasks (e.g., printing a
+                                sequence of numbers).
+                            </li>
+                            <li class="text-lg">Use while loops for situations where the number of iterations is unknown
+                                beforehand (e.g., guessing game).
+                            </li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Functions (defining and calling
+                            functions)</h3>
+                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px] md:my-2">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Defining functions with parameters and return values, calling functions
+                            </li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Write programs that use functions to modularize code (e.g., separate
+                                functions for calculation and output).</li>
+                            <li class="text-lg">Pass arguments to functions and handle return values.</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Arrays (One-Dimensional)</h3>
+                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Declaring and initializing arrays, accessing elements, iterating through
+                                arrays</li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Write programs to store and manipulate data using arrays (e.g., finding
+                                the sum or average of elements).</li>
+                            <li class="text-lg">Use loops to iterate through arrays and perform operations on each
+                                element.</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 6: Strings (String
+                            Manipulation)Strings (String Manipulation)</h3>
+                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">String data type, accessing characters, string manipulation functions</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Pointers</h3>
+                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Introduction to pointers, pointer arithmetic, pointer dereferencing</li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Write programs to understand basic pointer operations</li>
+                            <li class="text-lg">Use pointers to store array of characters</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Structures</h3>
+                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Defining and accessing structures, structure initialization, nested structures</li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Write programs to define and manipulate structures</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Time for projects</h3>
+                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Decomposition (breaking down complex problems into smaller subproblems)</li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Decompose complex CCC-style problems into smaller, solvable steps.</li>
+                            <li class="text-lg">Use flowcharts or pseudocode to represent the problem-solving process.</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Multidimensional Arrays</h3>
+                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Declaring and initializing multidimensional arrays, accessing elements, nested loops</li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Write programs to work with two-dimensional arrays and perform operations on them</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Dynamic Memory Allocation</h3>
+                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Dynamic memory allocation, memory management</li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Write programs to dynamically allocate memory for arrays and structures</li>
+                            <li class="text-lg">Implement dynamic data structures such as linked lists and trees using dynamic memory allocation</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Review and Projects</h3>
+                        <img src="../images/icon71c.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Comprehensive review, final project development</li>
+                        </ul>
+                        <li class="text-lg">Practice Problems:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Provide practice problems and exercises to assess students' understanding and reinforce key concepts</li>
+                        </ul>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer class="px-5 py-10 md:py-20 max-w-[1000px] mx-auto border-t">
+            <div class="py-10 md:grid md:grid-cols-4">
+                <div>
+                    <img src="../images/vision-coding-icon.jpg" class="" />
+                    <a href="./index.html">
+                        <div class="py-2 text-2xl">Vision Coding Academy</div>
+                    </a>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-2xl md:text-4xl pb-5">Menu</h3>
+                    <a href="../index.html" class="py-2 md:text-lg">Home</a>
+                    <a href="../courses/index.html" class="py-2 md:text-lg">Courses</a>
+                    <a href="../about/index.html" class="py-2 md:text-lg">About Us</a>
+                    <a href="../contact/index.html" class="py-2 md:text-lg">Contact</a>
+                </div>
+                <div>
+                    <h3 class="text-2xl md:text-4xl pb-5">Contact Us</h3>
+                    <p class="py-2 md:text-lg">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
+                    <p class="py-2 md:text-lg">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
+                    <p class="py-2 md:text-lg">+1 604-900-3707</p>
+                    <p class="py-2 md:text-lg">visioncodingca@gmail.com</p>
+                </div>
+                <div class="md:pl-32">
+                    <h3 class="text-2xl md:text-4xl pb-5">Socials</h3>
+                    <div class="py-2">
+                        <a href="https://www.instagram.com/vision.coding/" class="nav-element py-2 md:text-lg"
+                            target="_blank">Instagram</a>
+                    </div>
+                    <div class="py-2">
+                        <a href="https://www.facebook.com/profile.php?id=61556365105748" target="_blank"
+                            class="nav-element py-2 md:text-lg">Facebook</a>
+                    </div>
+                    <div class="py-2">
+                        <a href="http://pf.kakao.com/_LaRxfxj" target="_blank"
+                            class="nav-element py-2 md:text-lg">Kakaotalk</a>
+                    </div>
+                    <div class="py-2">
+                        <a href="http://wa.me/+16049003707" target="_blank"
+                            class="nav-element py-2 md:text-lg">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-5">
+                &copy; 2024 by Vision Coding Academy.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author: Paul Kim
+    Date: May 8, 2024
+    Version: 1.0.0
+    Vision Coding Academy Website Ver 4 Advanced Level G1 - G3 Page
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development | Vision Coding</title>
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="24x24" href="favicon-24x24.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <script src="../script/tailwindcss.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hover-effect.css">
+    <script src="../script/jquery-3.7.0.min.js"></script>
+    <script src="../script/scrollreveal-3.3.1.min.js"></script>
+    <script src="../script/menu.js" defer="defer"></script>
+    <script src="../script/vertical_effect.js" defer="defer"></script>
+    <script src="../script/hover-effect.js" defer></script>
+</head>
+
+<body>
+    <div class="flex flex-col min-h-screen bg-black text-white">
+        <header class="md:flex justify-between bg-black text-white sticky z-50 top-0">
+            <div class="flex justify-between md:block px-2">
+                <div class="flex">
+                    <a href="../index.html"><img src="../images/yellow1.png" class="w-[60px]" /></a>
+                    <a href="../index.html">
+                        <div class="nav-element hidden md:block py-5 text-2xl">Vision Coding Academy</div>
+                    </a>
+                    <a href="../index.html">
+                        <div class="md:hidden py-5 text-2xl">Vision Coding</div>
+                    </a>
+                </div>
+                <button id="hamburger-menu" class="text-3xl md:hidden" id="hamburger-menu">&#x2630;</button>
+            </div>
+            <nav id="main-nav">
+                <ul class="md:flex">
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:hidden">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../about/index.html">About</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../summercamp/index.html">Summer Camp<span class="text-green-500 px-2 pb-5 text-sm font-bold">NEW!</span></a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="./index.html">Courses</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../schedule/index.html">Schedule</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../gallery/index.html">Gallery</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../contact/index.html">Contact</a>
+                    </li>
+                    <!-- <li
+                        class="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../login/index.html">Login</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../signup/index.html">Signup</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <div class="flex">
+                <!-- <a href="../login/index.html"
+                    class="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                    Login
+                </a>
+                <a href="../signup/index.html"
+                    class="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                    Signup
+                </a> -->
+            </div>
+        </header>
+        <main class="flex-1 md:pl-20 md:max-w-[1400px]">
+            <div class="bg-black text-white md:flex md:pt-20">
+                <section class="flex-1 mx-auto md:mx-20 py-10 md:px-10 px-2">
+                    <h3 class="text-5xl md:text-6xl py-10 pb-2">WEB DEVELOPMENT</h3>
+                    <h3 class="text-5xl md:text-6xl pb-5"></h3>
+                    <p class="font-bold underline">Overview:</p>
+                    <p class="text-lg">Learn to build and deploy websites using HTML, CSS and JavaScript.</p>
+                </section>
+                <section class="flex-1 py-10">
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Introduction to Web Development
+                        </h3>
+                        <img src="../images/icon14internet.png" alt="scratch logo"
+                            class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Chapter 1: What is Web Development</li>
+                            <li class="text-lg">Chapter 2: What is HTML, CSS and JavaScript</li>
+                            <li class="text-lg">Chapter 3: Web Development Environment</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Introduction to HTML</h3>
+                        <img src="../images/icon72html.svg" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">HyperText Markup Language</li>
+                            <li class="text-lg">Webpage Layouts</li>
+                            <li class="text-lg">HTML Tags (head, body, header, main, footer, headings, nav, ul, ol, li,
+                                p)</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: HTML Tags
+                        </h3>
+                        <img src="../images/icon72html.svg" alt="logo" class="mx-auto md:float-right w-[75px] md:my-2">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Video and iframe tags</li>
+                            <li class="text-lg">Block and inline tags</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Build an HTML webpage!</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Introduction to CSS</h3>
+                        <img src="../images/icon72css.svg" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Cascading Style Sheet</li>
+                            <li class="text-lg">Embedded, Inline, External CSS</li>
+                            <li class="text-lg">tag, id, class selectors</li>
+                            <li class="text-lg">text styling</li>
+                        </ul>
+                        <li class="text-lg">Projects:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Style your HTML webpage text!</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Styling with CSS</h3>
+                        <img src="../images/icon72css.svg" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Styling Background</li>
+                            <li class="text-lg">Styling Border</li>
+                            <li class="text-lg">Styling Shadows</li>
+                            <li class="text-lg">Gradient</li>
+                        </ul>
+                        <li class="text-lg">Projects:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Create a button!</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">
+                            Week 6: CSS Box Model</h3>
+                        <img src="../images/icon72css.svg" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Flexbox</li>
+                            <li class="text-lg">Grid</li>
+                        </ul>
+                        <li class="text-lg">Projects:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Style your HTML webpage layout!</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Responsive Layout</h3>
+                        <img src="../images/icon72css.svg" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Desktop, tablet and mobile viewports</li>
+                            <li class="text-lg">CSS Media Rule and Mobile-first development</li>
+                            <li class="text-lg">Responsive images</li>
+                            <li class="text-lg">Collapsible Menu</li>
+                        </ul>
+                        <li class="text-lg">Projects:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Make your webpage responsive!</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Javascript</h3>
+                        <img src="../images/icon28js.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Introduction to JavaScript ES06</li>
+                            <li class="text-lg">Noscript tag</li>
+                            <li class="text-lg">Embedded, inline and external JavaScript</li>
+                            <li class="text-lg">Console Log</li>
+                            <li class="text-lg">JS Comments</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: DOM, variables, data types,
+                            conditionals</h3>
+                        <img src="../images/icon28js.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Document Object Model</li>
+                            <li class="text-lg">Variables</li>
+                            <li class="text-lg">Data types</li>
+                            <li class="text-lg">If Statements</li>
+                            <li class="text-lg">Operators</li>
+                            <li class="text-lg">Boolean Logic</li>
+                        </ul>
+                    </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 10: Arrays and Functions</h3>
+                        <img src="../images/icon28js.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Arrays</li>
+                            <li class="text-lg">Strings</li>
+                            <li class="text-lg">For Loop</li>
+                            <li class="text-lg">While Loop</li>
+                            <li class="text-lg">Nested Loops</li>
+                            <li class="text-lg">Functions</li>
+                            <li class="text-lg">Parameters</li>
+                            <li class="text-lg">Return Statement</li>
+                            <li class="text-lg">Built-in Functions</li>
+                            <li class="text-lg">Scope</li>
+                            <li class="text-lg">Arrow Functions</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Use JavaScript to generate lists!</li>
+                        </ul>
+                    </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 11: Elements and EventListeners</h3>
+                        <img src="../images/icon28js.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Live Selectors</li>
+                            <li class="text-lg">Query Selectors</li>
+                            <li class="text-lg">Events</li>
+                            <li class="text-lg">Operators</li>
+                            <li class="text-lg">Boolean Logic</li>
+                        </ul>
+                        <li class="text-lg">Projects:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Toggle Menu</li>
+                            <li class="text-lg">Popups</li>
+                            <li class="text-lg">Form Validation</li>
+                        </ul>
+                    </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 12: Animations and jQuery</h3>
+                        <img src="../images/icon28js.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">jQuery CDN</li>
+                            <li class="text-lg">jQuery Local</li>
+                            <li class="text-lg">jQuery Selectors</li>
+                            <li class="text-lg">jQuery Events</li>
+                            <li class="text-lg">CSS Transitions</li>
+                            <li class="text-lg">setTimeout and setInterval</li>
+                            <li class="text-lg">requestAnimationFrame and jQuery animate</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Add animation to your website!</li>
+                            <li class="text-lg">Lightbox</li>
+                            <li class="text-lg">Slideshow</li>
+                        </ul>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer class="px-5 py-10 md:py-20 max-w-[1000px] mx-auto border-t">
+            <div class="py-10 md:grid md:grid-cols-4">
+                <div>
+                    <img src="../images/vision-coding-icon.jpg" class="" />
+                    <a href="./index.html">
+                        <div class="py-2 text-2xl">Vision Coding Academy</div>
+                    </a>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-2xl md:text-4xl pb-5">Menu</h3>
+                    <a href="../index.html" class="py-2 md:text-lg">Home</a>
+                    <a href="../courses/index.html" class="py-2 md:text-lg">Courses</a>
+                    <a href="../about/index.html" class="py-2 md:text-lg">About Us</a>
+                    <a href="../contact/index.html" class="py-2 md:text-lg">Contact</a>
+                </div>
+                <div>
+                    <h3 class="text-2xl md:text-4xl pb-5">Contact Us</h3>
+                    <p class="py-2 md:text-lg">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
+                    <p class="py-2 md:text-lg">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
+                    <p class="py-2 md:text-lg">+1 604-900-3707</p>
+                    <p class="py-2 md:text-lg">visioncodingca@gmail.com</p>
+                </div>
+                <div class="md:pl-32">
+                    <h3 class="text-2xl md:text-4xl pb-5">Socials</h3>
+                    <div class="py-2">
+                        <a href="https://www.instagram.com/vision.coding/" class="nav-element py-2 md:text-lg"
+                            target="_blank">Instagram</a>
+                    </div>
+                    <div class="py-2">
+                        <a href="https://www.facebook.com/profile.php?id=61556365105748" target="_blank"
+                            class="nav-element py-2 md:text-lg">Facebook</a>
+                    </div>
+                    <div class="py-2">
+                        <a href="http://pf.kakao.com/_LaRxfxj" target="_blank"
+                            class="nav-element py-2 md:text-lg">Kakaotalk</a>
+                    </div>
+                    <div class="py-2">
+                        <a href="http://wa.me/+16049003707" target="_blank"
+                            class="nav-element py-2 md:text-lg">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-5">
+                &copy; 2024 by Vision Coding Academy.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

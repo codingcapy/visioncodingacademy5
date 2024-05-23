@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author: Paul Kim
+    Date: May 8, 2024
+    Version: 1.0.0
+    Vision Coding Academy Website Ver 4 Entry Level G1 - G3 Page
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python | Vision Coding</title>
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="24x24" href="favicon-24x24.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <script src="../script/tailwindcss.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hover-effect.css">
+    <script src="../script/jquery-3.7.0.min.js"></script>
+    <script src="../script/scrollreveal-3.3.1.min.js"></script>
+    <script src="../script/menu.js" defer="defer"></script>
+    <script src="../script/vertical_effect.js" defer="defer"></script>
+    <script src="../script/hover-effect.js" defer></script>
+</head>
+
+<body>
+    <div class="flex flex-col min-h-screen bg-black text-white">
+        <header class="md:flex justify-between bg-black text-white sticky z-50 top-0">
+            <div class="flex justify-between md:block px-2">
+                <div class="flex">
+                    <a href="../index.html"><img src="../images/yellow1.png" class="w-[60px]" /></a>
+                    <a href="../index.html">
+                        <div class="nav-element hidden md:block py-5 text-2xl">Vision Coding Academy</div>
+                    </a>
+                    <a href="../index.html">
+                        <div class="md:hidden py-5 text-2xl">Vision Coding</div>
+                    </a>
+                </div>
+                <button id="hamburger-menu" class="text-3xl md:hidden" id="hamburger-menu">&#x2630;</button>
+            </div>
+            <nav id="main-nav">
+                <ul class="md:flex">
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:hidden">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../about/index.html">About</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../summercamp/index.html">Summer Camp<span class="text-green-500 px-2 pb-5 text-sm font-bold">NEW!</span></a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="./index.html">Courses</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../schedule/index.html">Schedule</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../gallery/index.html">Gallery</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../contact/index.html">Contact</a>
+                    </li>
+                    <!-- <li
+                        class="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../login/index.html">Login</a>
+                    </li>
+                    <li
+                        class="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
+                        <a href="../signup/index.html">Signup</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <div class="flex">
+                <!-- <a href="../login/index.html"
+                    class="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                    Login
+                </a>
+                <a href="../signup/index.html"
+                    class="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300  md:text-2xl">
+                    Signup
+                </a> -->
+            </div>
+        </header>
+        <main class="timeline-content js--fadeInBottom flex-1 md:pl-20 md:max-w-[1400px]">
+            <div class="bg-black text-white md:flex md:pt-20 px-2">
+                <section class="flex-1 mx-auto md:mx-20 py-10 md:px-10">
+                    <h3 class="text-5xl md:text-6xl py-10 pb-2">PYTHON</h3>
+                    <h3 class="text-5xl md:text-6xl pb-5"></h3>
+                    <p class="font-bold underline">Overview:</p>
+                    <p class="text-lg">Learn the programming language that drives machine learning, artificial
+                        intelligence, and data science.</p>
+                </section>
+                <section class="flex-1 py-10">
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 1: Introduction to Python</h3>
+                        <img src="../images/icon13pc.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Installing Python in your device</li>
+                            <li class="text-lg">Installing Integrated Development Environment (VS Code)</li>
+                            <li class="text-lg">Print Statements</li>
+                            <li class="text-lg">Input Statements</li>
+                            <li class="text-lg">Variables and Constants</li>
+                            <li class="text-lg">Data Types</li>
+                            <li class="text-lg">Comments and documentation</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7">
+                            <li class="text-lg">Build a calculator level 1</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 2: Comparisons, Conditional, Data
+                            Structures, Iteration</h3>
+                        <img src="../images/icon7python2.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Comparisons</li>
+                            <li class="text-lg">If Statements</li>
+                            <li class="text-lg">Lists</li>
+                            <li class="text-lg">For Loop</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Build a calculator level 2</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 3: Loops continued</h3>
+                        <img src="../images/icon7python2.png" alt="logo"
+                            class="mx-auto md:float-right w-[75px] md:my-2">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">For Loops</li>
+                            <li class="text-lg">While Loops</li>
+                            <li class="text-lg">Nested For Loops</li>
+                            <li class="text-lg">Nested While Loops</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Number Guessing Game</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 4: Functions</h3>
+                        <img src="../images/icon7python2.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">What is a Function</li>
+                            <li class="text-lg">Return Statement</li>
+                            <li class="text-lg">Parameters</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Build a calculator level 3</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 5: Libraries</h3>
+                        <img src="../images/icon7python2.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">What is a Library</li>
+                            <li class="text-lg">Pip</li>
+                            <li class="text-lg">Numpy, Pandas, Matplotlib</li>
+                            <li class="text-lg">Turtle Library</li>
+                            <li class="text-lg">Random Library</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Number Guessing Game II</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 6: Data Structures</h3>
+                        <img src="../images/icon7python2.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Tuples</li>
+                            <li class="text-lg">Sets</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Movie Mania I</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 7: Dictionaries and String</h3>
+                        <img src="../images/icon7python2.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Dictionaries</li>
+                            <li class="text-lg">Strings</li>
+                            <li class="text-lg">String Methods</li>
+                            <li class="text-lg">String Slicing</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Social Media Project</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 8: Type Conversion and File I/O</h3>
+                        <img src="../images/icon7python2.png" alt="logo"
+                            class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Implicit Type Conversion</li>
+                            <li class="text-lg">Explicit Type Conversion</li>
+                            <li class="text-lg">File Input (read)</li>
+                            <li class="text-lg">File Output (write)</li>
+                            <li class="text-lg">Advanced File I/O</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Social Media Project 2</li>
+                        </ul>
+                    </ul>
+                    <div class="py-10 ">
+                        <h3 class="text-xl text-yellow-400 md:border-l-2 pl-5">Week 9: Algorithms
+                        </h3>
+                        <img src="../images/icon17algorithm.png" alt="logo" class="mx-auto md:float-right w-[75px]">
+                    </div>
+                    <ul class="list-disc list-inside pl-2 md:pl-5">
+                        <li class="text-lg">Topics:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">What are Algorithms</li>
+                            <li class="text-lg">Search Algorithms​</li>
+                            <li class="text-lg">Linear Search​</li>
+                            <li class="text-lg">Binary Search​</li>
+                        </ul>
+                        <li class="text-lg">Project:</li>
+                        <ul class="list-disc list-inside pl-7 pb-5">
+                            <li class="text-lg">Social Media Project 3</li>
+                        </ul>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer class="px-5 py-10 md:py-20 max-w-[1000px] mx-auto border-t">
+            <div class="py-10 md:grid md:grid-cols-4">
+                <div>
+                    <img src="../images/vision-coding-icon.jpg" class="" />
+                    <a href="./index.html">
+                        <div class="py-2 text-2xl">Vision Coding Academy</div>
+                    </a>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-2xl md:text-4xl pb-5">Menu</h3>
+                    <a href="../index.html" class="py-2 md:text-lg">Home</a>
+                    <a href="../courses/index.html" class="py-2 md:text-lg">Courses</a>
+                    <a href="../about/index.html" class="py-2 md:text-lg">About Us</a>
+                    <a href="../contact/index.html" class="py-2 md:text-lg">Contact</a>
+                </div>
+                <div>
+                    <h3 class="text-2xl md:text-4xl pb-5">Contact Us</h3>
+                    <p class="py-2 md:text-lg">2885 Barnet Hwy, Coquitlam, BC V3B 1C1</p>
+                    <p class="py-2 md:text-lg">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
+                    <p class="py-2 md:text-lg">+1 604-900-3707</p>
+                    <p class="py-2 md:text-lg">visioncodingca@gmail.com</p>
+                </div>
+                <div class="md:pl-32">
+                    <h3 class="text-2xl md:text-4xl pb-5">Socials</h3>
+                    <div class="py-2">
+                        <a href="https://www.instagram.com/vision.coding/" class="nav-element py-2 md:text-lg"
+                            target="_blank">Instagram</a>
+                    </div>
+                    <div class="py-2">
+                        <a href="https://www.facebook.com/profile.php?id=61556365105748" target="_blank"
+                            class="nav-element py-2 md:text-lg">Facebook</a>
+                    </div>
+                    <div class="py-2">
+                        <a href="http://pf.kakao.com/_LaRxfxj" target="_blank"
+                            class="nav-element py-2 md:text-lg">Kakaotalk</a>
+                    </div>
+                    <div class="py-2">
+                        <a href="http://wa.me/+16049003707" target="_blank"
+                            class="nav-element py-2 md:text-lg">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-5">
+                &copy; 2024 by Vision Coding Academy.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

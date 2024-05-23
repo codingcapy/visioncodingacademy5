@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'Mulish-Medium';
+    src: url(../font/Mulish/static/Mulish-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Mulish-Light';
+    src: url(../font/Mulish/static/Mulish-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Antonio-Regular';
+    src: url(../font/Antonio/static/Antonio-Regular.ttf);
+}
+
+.mulish-light {
+    font-family: 'Mulish-Light';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Antonio-Regular';
+}
+
+p,
+button {
+    font-family: 'Mulish-Medium'
+}
+
+header nav ul li:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 0px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
+    transition: all ease-in-out 0.5s;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.nav-element:hover {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
+    transition: all ease-in-out 0.5s;
+}
+
+.hero-banner {
+    height: 300px;
+    padding: 30px;
+    background-image: url("../images/banner-bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner::before {
+    content: "";
+    /* Create a pseudo-element for overlay */
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 700px;
+
+    /* Adjust the opacity to darken/lighten */
+}
+
+.hero-banner2 {
+    height: 300px;
+    padding: 30px;
+    background-image: url("../images/banner-bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner2::before {
+    content: "";
+    /* Create a pseudo-element for overlay */
+    position: absolute;
+
+    left: 0;
+    width: 100%;
+    height: 700px;
+
+    /* Adjust the opacity to darken/lighten */
+}
+
+.hero-banner h1,
+.hero-banner p,
+.hero-banner a {
+    z-index: 1;
+    /* Ensure text and button are above the overlay */
+}
+
+.approach {
+    height: 1350px;
+    padding: 30px;
+    background-image: url("../images/banner-bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 10px #fff, 0 0 20px #fff;
+    }
+
+    to {
+        text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+    }
+}
+
+.glow-teal {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow-teal 1s ease-in-out infinite alternate;
+    -moz-animation: glow-teal 1s ease-in-out infinite alternate;
+    animation: glow-teal 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow-teal {
+    from {
+        text-shadow: 0 0 0px rgb(94 234 212), 0 0 0px rgb(94 234 212), 0 0 0px rgb(94 234 212), 0 0 0px rgb(94 234 212), 0 0 0px rgb(94 234 212), 0 0 10px rgb(94 234 212), 0 0 20px rgb(94 234 212);
+    }
+
+    to {
+        text-shadow: 0 0 0px rgb(94 234 212), 0 0 0px rgb(94 234 212), 0 0 0px rgb(94 234 212), 0 0 8px rgb(94 234 212), 0 0 30px rgb(94 234 212), 0 0 40px rgb(94 234 212), 0 0 50px rgb(94 234 212);
+    }
+}
+
+.intro {
+    padding: 30px;
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ad1 {
+    position: relative;
+    padding: 30px;
+    background-image: url("../images/ad1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ad1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ad1 h2,
+.ad1 p,
+.ad1 a {
+    position: relative;
+    z-index: 99;
+    /* Ensure text and button are above the overlay */
+}
+
+.ad2 {
+    position: relative;
+    padding: 30px;
+    background-image: url("../images/ad2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ad2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ad2 h2,
+.ad2 p,
+.ad2 a {
+    position: relative;
+    z-index: 99;
+    /* Ensure text and button are above the overlay */
+}
+
+.ad3 {
+    position: relative;
+    padding: 30px;
+    background-image: url("../images/ad3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ad3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ad3 h2,
+.ad3 p,
+.ad3 a {
+    position: relative;
+    z-index: 99;
+    /* Ensure text and button are above the overlay */
+}
+
+.about {
+    height: 300px;
+    padding: 30px;
+    background-image: url("../images/about2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 5px #000;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.about h1,
+.about p {
+    z-index: 1;
+}
+
+.summercamp {
+    height: 400px;
+    padding: 30px;
+    background-image: url("../images/summercamp.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 5px #000;
+}
+
+.summercamp::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.summercamp h1,
+.summercamp p {
+    z-index: 1;
+}
+
+@media(min-width:720px) {
+    .hero-banner {
+        height: 700px;
+    }
+
+    .map {
+        width: 100%;
+        height: 400px;
+    }
+
+    .approach {
+        height: 900px;
+    }
+
+    .about {
+        height: 700px;
+    }
+
+    .about::before {
+        height: 700px;
+    }
+
+    .summercamp {
+        height: 700px;
+    }
+
+    .summercamp::before {
+        height: 700px;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 48px;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .left-arrow {
+        left: 100px;
+    }
+
+    .right-arrow {
+        right: 100px;
+    }
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.lightbox.fade-in {
+    opacity: 1;
+}
+
+.lightbox.fade-out {
+    opacity: 0;
+}
