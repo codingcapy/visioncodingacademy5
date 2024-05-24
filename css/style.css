@@ -148,6 +148,7 @@ main {
 }
 
 .intro {
+    height: 1500px;
     padding: 30px;
     background-image: url("../images/background2.jpg");
     background-size: cover;
@@ -289,6 +290,10 @@ main {
 @media(min-width:720px) {
     .hero-banner {
         height: 700px;
+    }
+
+    .intro{
+        height: 1150px;
     }
 
     .map {
