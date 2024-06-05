@@ -13,6 +13,10 @@
     src: url(../font/Antonio/static/Antonio-Regular.ttf);
 }
 
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .mulish-light {
     font-family: 'Mulish-Light';
 }
