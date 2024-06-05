@@ -13,8 +13,26 @@
     src: url(../font/Antonio/static/Antonio-Regular.ttf);
 }
 
-html{
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'G-Market-Sans-Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.kr-font {
+    font-family: 'G-Market-Sans-Medium';
 }
 
 .mulish-light {
@@ -291,8 +309,35 @@ main {
     z-index: 1;
 }
 
-.summercamp a{
+.summercamp a {
     text-shadow: 0 0 0px;
+}
+
+.summercamp-korean {
+    height: 2850px;
+    padding: 30px;
+    background-image: url("../images/whistler2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.summercamp-korean::before {
+    height: 2850px;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.summercamp-korean h1,
+.summercamp-korean p,
+.summercamp-korean .location {
+    z-index: 1;
 }
 
 @media(min-width:720px) {
@@ -300,7 +345,7 @@ main {
         height: 700px;
     }
 
-    .intro{
+    .intro {
         height: 1150px;
     }
 
@@ -327,6 +372,14 @@ main {
 
     .summercamp::before {
         height: 700px;
+    }
+
+    .summercamp-korean {
+        height: 2000px;
+    }
+
+    .summercamp-korean::before {
+        height: 2000px;
     }
 
     .arrow {
