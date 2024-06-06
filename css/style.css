@@ -13,6 +13,17 @@
     src: url(../font/Antonio/static/Antonio-Regular.ttf);
 }
 
+/*Credit to 한국전기안전공사*/
+@font-face {
+    font-family: 'Electric-Safety';
+    src: url(../font/전기안전체_R/Electric-Safety-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Gabia';
+    src: url(../font/GabiaOndam/GabiaOndam.ttf);
+}
+
 @font-face {
     font-family: 'KBO-Dia-Gothic_bold';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
@@ -27,6 +38,55 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Dolbomche_R';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ycomputer-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/Ycomputer-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YiSunShinDotumM';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF_HailSnow';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HailSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EnvironmentR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/EnvironmentR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dalmoori';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/dalmoori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DosKor';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/DosKor.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,7 +96,7 @@ html {
 }
 
 .mulish-light {
-    font-family: 'Mulish-Light';
+    font-family: 'Electric-Safety';
 }
 
 h1,
@@ -44,12 +104,12 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Antonio-Regular';
+    font-family: 'Electric-Safety';
 }
 
 p,
 button {
-    font-family: 'Mulish-Medium'
+    font-family: 'EnvironmentR'
 }
 
 header nav ul li:hover {
