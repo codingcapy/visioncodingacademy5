@@ -375,8 +375,8 @@ main {
 }
 
 .summercamp-korean {
-    height: 3000px;
-    padding: 30px;
+    height: 1200px;
+    padding: 10px;
     background-image: url("../images/whistler2.jpg");
     background-size: cover;
     background-position: center;
@@ -387,7 +387,7 @@ main {
 }
 
 .summercamp-korean::before {
-    height: 3000px;
+    height: 1200px;
     content: "";
     position: absolute;
     left: 0;
