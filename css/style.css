@@ -1,3 +1,29 @@
+
+/*Credit to 한국전기안전공사*/
+@font-face {
+    font-family: 'Electric-Safety';
+    src: url(../font/전기안전체_R/Electric-Safety-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'EnvironmentR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/EnvironmentR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'G-Market-Sans-Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto';
+    src: url(../font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf);
+}
+
 @font-face {
     font-family: 'Mulish-Medium';
     src: url(../font/Mulish/static/Mulish-Medium.ttf);
@@ -13,11 +39,6 @@
     src: url(../font/Antonio/static/Antonio-Regular.ttf);
 }
 
-/*Credit to 한국전기안전공사*/
-@font-face {
-    font-family: 'Electric-Safety';
-    src: url(../font/전기안전체_R/Electric-Safety-Regular.ttf);
-}
 
 @font-face {
     font-family: 'Gabia';
@@ -28,13 +49,6 @@
     font-family: 'KBO-Dia-Gothic_bold';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
     font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'G-Market-Sans-Medium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
     font-style: normal;
 }
 
@@ -67,13 +81,6 @@
 }
 
 @font-face {
-    font-family: 'EnvironmentR';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/EnvironmentR.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'dalmoori';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/dalmoori.woff') format('woff');
     font-weight: normal;
@@ -92,7 +99,7 @@ html {
 }
 
 .kr-font {
-    font-family: 'G-Market-Sans-Medium';
+    font-family: 'Noto';
 }
 
 .mulish-light {
