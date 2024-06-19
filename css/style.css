@@ -263,7 +263,7 @@ main {
 .ad1 p,
 .ad1 a {
     position: relative;
-    z-index: 99;
+    z-index: 25;
     /* Ensure text and button are above the overlay */
 }
 
@@ -289,7 +289,7 @@ main {
 .ad2 p,
 .ad2 a {
     position: relative;
-    z-index: 99;
+    z-index: 25;
     /* Ensure text and button are above the overlay */
 }
 
@@ -315,7 +315,7 @@ main {
 .ad3 p,
 .ad3 a {
     position: relative;
-    z-index: 99;
+    z-index: 25;
     /* Ensure text and button are above the overlay */
 }
 
@@ -404,6 +404,58 @@ main {
     z-index: 1;
 }
 
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 25;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.lightbox.fade-in {
+    opacity: 1;
+}
+
+.lightbox.fade-out {
+    opacity: 0;
+}
+
+#pop-up{
+    position:fixed;
+    top:0px;
+    left:0px;    
+    width:100vw;
+    height:100vh;
+	z-index:1000;
+	background-color: rgba(48, 48, 48, 0.8);    
+	font-size:.85em;
+}
+#pop-up-div{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+	max-width:400px;
+	min-width:300px;
+	padding:10px;
+	border-radius:10px;
+	background-color: rgb(46, 46, 46);
+	color:white;
+}
+
 @media(min-width:720px) {
     .hero-banner {
         height: 700px;
@@ -463,33 +515,8 @@ main {
     .right-arrow {
         right: 100px;
     }
-}
 
-.lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.lightbox-image {
-    max-width: 100%;
-    max-height: 100%;
-    transition: opacity 0.5s ease;
-}
-
-.lightbox.fade-in {
-    opacity: 1;
-}
-
-.lightbox.fade-out {
-    opacity: 0;
+    #pop-up-div{
+        max-width:1000px;
+    }
 }
