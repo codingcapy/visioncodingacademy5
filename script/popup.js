@@ -8,6 +8,10 @@ const okButton =  document.getElementById("ok-button");
 //     popup.style.display = "none";
 // });
 
+popup.addEventListener('click', function(){    
+    popup.style.display = "none";
+});
+
 okButton.addEventListener('click', function(){    
     popup.style.display = "none";
 });
