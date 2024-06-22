@@ -99,7 +99,7 @@ html {
 }
 
 .kr-font {
-    font-family: 'Noto';
+    font-family: 'G-Market-Sans-Medium';
 }
 
 h1,
@@ -440,13 +440,13 @@ main {
     width:100vw;
     height:100vh;
 	z-index:1000;
-	background-color: rgba(48, 48, 48, 0.8);    
+	background-color: rgba(5, 5, 5, 0.8);    
 	font-size:.85em;
 }
 #pop-up-div{
 	position:absolute;
 	left:50%;
-	top:50%;
+	top:40%;
 	transform:translate(-50%, -50%);
 	max-width:400px;
 	min-width:300px;
@@ -518,5 +518,6 @@ main {
 
     #pop-up-div{
         max-width:1000px;
+        top:50%;
     }
 }
