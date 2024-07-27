@@ -377,6 +377,28 @@ main {
     text-shadow: 0 0 0px;
 }
 
+.summercamp2 {
+    height: 500px;
+    padding: 30px;
+    background-image: url("../images/arduino.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 5px #000;
+}
+
+.summercamp2::before {
+    height: 500px;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
 .summercamp-korean {
     height: 960px;
     padding: 10px;
@@ -498,6 +520,14 @@ main {
     }
 
     .summercamp::before {
+        height: 700px;
+    }
+
+    .summercamp2 {
+        height: 700px;
+    }
+
+    .summercamp2::before {
         height: 700px;
     }
 
