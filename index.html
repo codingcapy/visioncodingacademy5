@@ -94,13 +94,17 @@
             </div>
         </header>
         <main class="flex-1 mx-auto">
-            <section class="hero-banner bg-white">
-                <div class="timeline-content js--fadeInRight">
-                    <div class="flex pt-5 md:pt-0">
+            <div>
+                <video id="background-video" autoplay loop muted poster="./images/home-banner.jpg"
+                    class="h-[400px] md:h-[700px]">
+                    <source src="./videos/bg2.mp4" type="video/mp4">
+                </video>
+                <div class="timeline-content js--fadeInRight absolute top-[15%] md:left-[5%] z-10">
+                    <div class="flex pt-5 ">
                         <img src="./images/logo_alpha.png" alt="" class="w-[90px] h-[100px] md:w-[360px] md:h-[405px]">
                         <div class="flex flex-col md:my-24 md:ml-40 md:pl-10 md:border-l-8">
                             <h1 class="text-4xl md:text-8xl text-yellow-100">VISION CODING ACADEMY</h1>
-                            <p class="text-lg md:text-7xl py-2 md:py-10 pb-0 mulish-light">Premium IT Education</p>
+                            <p class="text-lg md:text-7xl py-2 md:pt-10 pb-0 mulish-light">Premium IT Education</p>
                         </div>
                     </div>
                     <p class="text-center text-lg md:text-2xl py-5 md:py-0 md:pb-5 drop-shadow">Discover the Power to
@@ -112,14 +116,13 @@
                         <span
                             class="bg-gradient-to-r from-yellow-400 to-yellow-100 inline-block text-transparent bg-clip-text">Code</span>
                     </p>
-                    <p></p>
-                    <div class="flex flex-col mx-auto">
+                    <div class="flex flex-col mx-auto mt-10">
                         <a href="./courses/index.html"
                             class="mx-auto px-3 py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">View
                             Courses</a>
                     </div>
                 </div>
-            </section>
+            </div>
             <section class="intro py-20 md:py-32">
                 <div class="md:max-w-[1400px] mx-auto">
                     <h2 class="timeline-content js--fadeInBottom text-4xl pb-4 text-yellow-200">
@@ -495,8 +498,10 @@
                 <section class="md:flex mx-auto py-14 w-[100%] md:px-10">
                     <div class="md:mx-2 w-[100%]">
                         <h1 class="text-2xl py-2 text-center md:text-left">Coquitlam Location</h1>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.9185957892046!2d-122.80749480793338!3d49.27793969733489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548679bb025a33b1%3A0x34e0d3bbaf8b46ae!2sVision%20Coding%20Academy!5e0!3m2!1sen!2sca!4v1719431743821!5m2!1sen!2sca" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="map mx-auto"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.9185957892046!2d-122.80749480793338!3d49.27793969733489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548679bb025a33b1%3A0x34e0d3bbaf8b46ae!2sVision%20Coding%20Academy!5e0!3m2!1sen!2sca!4v1719431743821!5m2!1sen!2sca"
+                            width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="map mx-auto"></iframe>
                     </div>
                     <div class="md:mx-2 py-10 md:py-0 w-[100%]">
                         <h1 class="text-2xl py-2 text-center md:text-left">West Vancouver Location</h1>
@@ -684,10 +689,12 @@
             <!-- <button id="close-pop-up" class="absolute top-[15px] right-[15px] font-bold text-yellow-300 text-xl hover:text-white transition ease-in-out duration-300">&#x2715;</button> -->
             <h2 class="text-4xl md:text-7xl text-yellow-200 text-center pt-1 md:pt-5 md:px-5">GRAND OPENING!</h2>
             <h2 class="text-2xl md:text-4xl text-yellow-200 text-center py-1 md:py-2">Vision Coding West Vancouver!</h2>
-            <p class="text-xl md:text-2xl text-center pb-1 md:pb-2"><span class="text-yellow-300">Free Trial</span> Classes Available</p>
+            <p class="text-xl md:text-2xl text-center pb-1 md:pb-2"><span class="text-yellow-300">Free Trial</span>
+                Classes Available</p>
             <img src="./images/gallery1.jpg" alt="" class="py-1 md:py-2 w-[400px] mx-auto">
             <p class="md:text-lg text-center py-1 md:py-2">2428 Haywood Ave, West Vancouver, BC V7V 1Y1</p>
-            <button id="ok-button" class="flex flex-col mx-auto mx-auto my-1 md:my-3 px-10 md:px-16 py1 md:py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold text-xl md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">OK</button>
+            <button id="ok-button"
+                class="flex flex-col mx-auto mx-auto my-1 md:my-3 px-10 md:px-16 py1 md:py-3 border border-4 rounded border-yellow-300 text-yellow-300 font-bold text-xl md:text-2xl hover:bg-yellow-300 hover:text-black transition-all ease duration-500">OK</button>
         </div>
     </section>
 </body>
